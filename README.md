@@ -7,7 +7,7 @@
 
 ## Team Members:
 
-1. Lily Shaw @ljs48905
+1. Lily Shaw [lilyshaw714]
 2. x
 3. x
 4. x
@@ -23,3 +23,18 @@ xx
 Explanation of data model: 
 
 xx
+
+
+
+## Data Dictionary:
+
+
+## Queries:
+
+
+## Database information:
+
+Name of the database: ns_Sp26_61608_Group4
+
+Additional information: xx
+
