@@ -1,6 +1,4 @@
-# 4610---Group-4-61608-
-
-# Team 4 Mist 4610 Group Project 1
+# Group 4 Mist 4610 Group Project 1
 
 ## Team Name: 
 61608 Group 4 
