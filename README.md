@@ -6,10 +6,11 @@
 ## Team Members:
 
 1. Lily Shaw [lilyshaw714]
-2. x
-3. x
-4. x
-5. x
+2. Shruti Alladi [salladi13]
+3. Bryce Riemersma [Bryceriem]
+4. Matt Miller [matthewroanmiller]
+5. Jacob Witucki [x]
+6. Ashleigh Serafin [AshleighSerafin]
    
 
 ## Problem Description:
