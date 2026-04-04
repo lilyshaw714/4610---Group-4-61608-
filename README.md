@@ -20,22 +20,21 @@ Delivery planning and execution are handled through **Routes** and **Drone\_Assi
 The **Drones** entity represents the physical fleet, storing drone identifiers, models, operational status, maximum payload capacity, purchase dates, and accumulated flight hours. Drones are linked to multiple operational records, including assignments, incidents, maintenance activities, and charging sessions, which collectively provide a complete operational history for each unit. Maintenance activities are captured in **Maintenance\_Logs**, which record when maintenance occurred, what type of service was performed, the drone’s operating hours at the time, and technician notes. These logs are associated with **Technicians**, who are defined by their names and certification levels, supporting accountability and regulatory compliance.
 
 Energy and infrastructure management are handled through **Charging\_Stations** and **Station\_Sessions**. Charging stations define the available charging infrastructure and power capacity, while station sessions record each charging event, including the drone involved, the station used, session timing, and energy consumed. This structure enables energy usage analysis, operational optimization, and sustainability reporting. Finally, operational risks and exceptions are captured in the **Incidents** table, which logs safety or performance issues related to specific drones and assignments, along with incident types, severity levels, timestamps, and descriptions. Together, these interconnected entities form a normalized, scalable schema that supports traceability, operational insight, and analytics across all aspects of a drone delivery system.
-
    
-<img width="683" height="458" alt="Screenshot 2026-03-30 at 6 41 21 PM" src="https://github.com/user-attachments/assets/a52790be-6fde-48e5-9961-76eba6d918b0" />
+<img width="572" height="689" alt="Screenshot 2026-04-03 at 1 07 23 PM" src="https://github.com/user-attachments/assets/70e7798c-ab99-4a96-b858-4c848cde2559" />
 
 # Data Dictionary:
 <img width="662" height="518" alt="Screenshot 2026-04-02 at 6 22 03 PM" src="https://github.com/user-attachments/assets/884449ad-38c4-4131-b2bc-efef91f9e756" />
-<img width="642" height="436" alt="Screenshot 2026-03-30 at 10 46 02 PM" src="https://github.com/user-attachments/assets/027a60b7-1810-403a-9515-01530ff27b02" />  
-<img width="539" height="625" alt="Screenshot 2026-04-01 at 12 32 29 PM" src="https://github.com/user-attachments/assets/5642881a-b210-4cb1-a1bd-160fcdab1d75" />
-<img width="585" height="558" alt="Screenshot 2026-04-01 at 12 32 45 PM" src="https://github.com/user-attachments/assets/58cdd6be-dcfe-4e77-8db9-e55d7961c030" />
-<img width="658" height="622" alt="Screenshot 2026-04-01 at 12 27 23 PM" src="https://github.com/user-attachments/assets/21e53f51-2c05-40b3-b29d-be2221ac7b50" />
+<img width="721" height="511" alt="Screenshot 2026-04-03 at 2 30 30 PM" src="https://github.com/user-attachments/assets/b7bdac48-bb43-478e-848c-4ef877de0d04" />
+<img width="661" height="671" alt="Screenshot 2026-04-03 at 6 29 22 PM" src="https://github.com/user-attachments/assets/37ac7b3c-eaec-4022-b447-7e4bfd7d045b" />
+<img width="681" height="645" alt="Screenshot 2026-04-03 at 2 32 00 PM" src="https://github.com/user-attachments/assets/0a9343da-2ee6-4cbd-a72a-a94f6905d861" />
+<img width="680" height="657" alt="Screenshot 2026-04-03 at 2 31 17 PM" src="https://github.com/user-attachments/assets/6013f9ed-0bbc-4026-bbc1-7577938dc0f2" />
 <img width="644" height="649" alt="Screenshot 2026-04-01 at 12 27 45 PM" src="https://github.com/user-attachments/assets/e602a978-d091-4f3e-91dd-61277f0381b5" />
 <img width="504" height="601" alt="Screenshot 2026-04-01 at 12 28 11 PM" src="https://github.com/user-attachments/assets/171287c0-46b7-4837-8693-ec97689cd78f" />
 <img width="653" height="359" alt="Screenshot 2026-04-01 at 12 28 25 PM" src="https://github.com/user-attachments/assets/8127f000-95db-4425-bc8a-dc9762d14432" />
 <img width="648" height="414" alt="Screenshot 2026-04-01 at 12 29 47 PM" src="https://github.com/user-attachments/assets/581be807-1f84-4750-8830-5e6033ee3b8d" />
 <img width="644" height="548" alt="Screenshot 2026-04-01 at 12 30 03 PM" src="https://github.com/user-attachments/assets/9fb2122a-fdb1-4f72-a662-291c2be790dc" />
-<img width="586" height="279" alt="Screenshot 2026-04-01 at 12 33 30 PM" src="https://github.com/user-attachments/assets/6969aa1b-74fe-478f-bc34-5631e742bb8f" />
+<img width="674" height="436" alt="Screenshot 2026-04-03 at 2 34 05 PM" src="https://github.com/user-attachments/assets/209b2a53-ee64-4909-a7d5-3f8642f9e032" />
 
 
 # Queries:  
@@ -58,7 +57,7 @@ Energy and infrastructure management are handled through **Charging\_Stations** 
 8. This query retrieves all active level 3 certified technicians and summarizes their maintenance activity across all service types. For each technician, it returns the total number of services performed, the total hours logged, and the average hours spent per service. The results are ordered by total hours logged from highest to lowest. This is important because it allows management to identify which of their most qualified technicians are carrying the heaviest workload.
 <img width="1221" height="651" alt="Screenshot 2026-04-03 at 12 05 14 PM" src="https://github.com/user-attachments/assets/23f76db7-a4fa-48a0-9ca2-343f2c4e6178" />
 9. Query 9 shows which completed routes generated the most total revenue. It returns the route ID, the total number of shipped orders on that route, and the total revenue produced from those orders. The results are grouped by route and filtered to only include routes with more than $100 in total revenue. This is useful for showing the delivery routes that are the most profitable.
-<img width="1219" height="656" alt="Screenshot 2026-04-03 at 12 07 56 PM" src="https://github.com/user-attachments/assets/dd765ff7-e3d7-49ed-a341-dbd308fbd367" />
+<img width="1219" height="654" alt="Screenshot 2026-04-03 at 2 28 45 PM" src="https://github.com/user-attachments/assets/ddb74505-ef8c-421f-ac76-8753bee542ad" />
 10. Query 10 shows drones that have never been involved in any incidents. It returns the drone ID, model, and total flight hours for each of these drones. This is important because it shows which drones have a clean safety record, which can help with assigning future assignments.
 <img width="1220" height="653" alt="Screenshot 2026-04-03 at 12 09 01 PM" src="https://github.com/user-attachments/assets/98927be2-5957-49c2-9b25-a6744595294d" />
 
@@ -66,4 +65,4 @@ Energy and infrastructure management are handled through **Charging\_Stations** 
 
 Name of the database: ns_Sp26_61608_Group4 
 
-Additional information: Each query listed above is marked in the database using stored procedures which can be called using the following format: CALL TP_Q1();
+Additional information: Each query listed above is marked in the database using stored procedures which can be called using the following format: CALL TP_QX();
